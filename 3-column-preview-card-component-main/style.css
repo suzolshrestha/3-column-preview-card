@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Architects+Daughter&family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,600&family=Lexend+Deca&family=Montserrat:wght@500;800&family=Outfit:wght@300;400;600&family=Red+Hat+Display:ital,wght@0,500;0,900;1,700&family=Roboto+Slab&family=Sono:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Architects+Daughter&family=Big+Shoulders+Display:wght@700&family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,600&family=Lexend+Deca&family=Montserrat:wght@500;800&family=Outfit:wght@300;400;600&family=Red+Hat+Display:ital,wght@0,500;0,900;1,700&family=Roboto+Slab&family=Sono:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+}
+.container {
+  width: 800px;
+  margin: 20px auto;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.gridbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+.brownbox {
+  padding: 50px 42px;
+  background-color: hsl(31, 77%, 52%);
+}
+.bluebox {
+  padding: 50px 42px;
+  background-color: hsl(184, 100%, 22%);
+}
+.darkbox {
+  padding: 50px 42px;
+  background-color: hsl(179, 100%, 13%);
+}
+.icon {
+  width: 46px;
+  height: 30px;
+}
+.text_1 {
+  margin: 30px 0;
+  color: hsl(0, 0%, 95%);
+  font-size: xx-large;
+  font-family: "Big Shoulders Display", cursive;
+}
+.bodyy {
+  line-height: 21px;
+  letter-spacing: 1px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 14px;
+}
+
+.num {
+  background-color: hsl(0, 0%, 95%);
+  margin-top: 70px;
+  line-height: 35px;
+  width: 120px;
+  border-radius: 20px;
+  font-family: "Lexend Deca", sans-serif;
+  border: 1px solid transparent;
+  text-align: center;
+  font-size: small;
+  display: inline block;
+}
+
+#num1 {
+  color: hsl(31, 77%, 52%);
+}
+#num2 {
+  color: hsl(184, 100%, 22%);
+}
+#num3 {
+  color: hsl(179, 100%, 13%);
+}
+.num:hover {
+  background-color: transparent;
+  border: 1px solid hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+.gridbox #num1:hover {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.gridbox #num2:hover {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.gridbox #num3:hover {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media only screen and (max-width: 770px) {
+  .gridbox {
+    display: flex;
+    flex-direction: column;
+  }
+}
